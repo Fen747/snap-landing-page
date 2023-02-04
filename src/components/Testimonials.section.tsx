@@ -9,7 +9,7 @@ export const Testimonials = () => {
         </q>
         <div className="row align-center justify">
           <div className="avatar mr-1">
-            <Image />
+            <Image alt="Carole" src="#"/>
           </div>
           <div>
             Carole L. (DREAL Normandie)
