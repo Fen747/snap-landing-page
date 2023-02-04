@@ -1,13 +1,27 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript, DocumentProps } from "next/document";
+import { dsfrDocumentApi } from "./_app";
 
-export default function Document() {
+
+const {
+  getColorSchemeHtmlAttributes,
+  augmentDocumentForDsfr
+} = dsfrDocumentApi;
+
+export default function Document(props: DocumentProps) {
+  const htmlAttributes = getColorSchemeHtmlAttributes(props)
+
+  console.log("htmlAttributes", htmlAttributes);
+
+
   return (
-    <Html lang="en">
+    <Html {...htmlAttributes}>
       <Head />
       <body>
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
+
+augmentDocumentForDsfr(Document);
