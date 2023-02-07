@@ -42,6 +42,12 @@ section {
   padding: 5rem 1rem;
 }
 
+@media screen and (max-width: 769px) {
+  section {
+    padding: 2rem 0rem;
+  }
+}
+
 /*
  ----- Display -----
 */
@@ -76,8 +82,34 @@ section {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 .full-width {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .m-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .m-row {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*
@@ -112,7 +144,7 @@ section {
 /*
  ----- Other -----
 */
-.avatar {
+.avatar img {
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -126,17 +158,27 @@ section {
   margin-bottom: 1rem;
 }
 
-.mission-catchprase {
+/* a mobile version of the .testimonial-text class that unset font size and height */
+@media screen and (max-width: 768px) {
+  .testimonial-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.mission-catchphrase {
   font-weight: bold;
   font-size: 2.5rem;
-  margin-top: 48px;
-  margin-bottom: 96px;
+  margin-top: 36px;
+  margin-bottom: 72px;
+  line-height: 110%;
 }
 
 .mission-card {
   background-color: white;
   color: var(--dark-blue);
-  padding: 2rem;
+  padding: 1rem;
+  min-width: 33%;
   max-width: 400px;
   display: flex;
   flex-direction: column;
@@ -144,7 +186,29 @@ section {
 }
 
 .mission-card:not(:last-child) {
-  margin-right: 1rem;;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .mission-card {
+    width: unset;
+    min-width: unset;
+    max-width: unset;
+    min-height: unset;
+    min-height: unset;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mission-card {
+    min-height: unset;
+    margin-bottom: 1rem;
+  }
+
+  .mission-card:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 .mission-card > .mission-card-img {
@@ -171,6 +235,34 @@ section {
 #impact-services img {
   width: 100%;
   height: auto;
+}
+
+.pastille {
+  position: absolute;
+  bottom: 0px;
+  right: 2rem;
+  transform: translateY(50%);
+}
+
+@media screen and (max-width: 768px) {
+  .pastille {
+    right: 0rem;
+  }
+
+  .pastille img {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+  }
+}
+
+section.hero {
+  min-height: 500px;
+  position: relative;
+}
+
+section.mission {
+  padding-top: 5rem;
 }
 
 /*

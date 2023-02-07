@@ -1,13 +1,20 @@
 import Image from 'next/image'
-import ToolsImg from "@images/outils.png"
+import PastilleImage from "@images/pastille.png"
 import Input from '@codegouvfr/react-dsfr/Input'
 import Button from '@codegouvfr/react-dsfr/Button'
 import heroBackgroundImage from '@images/louvre.jpg'
 
 export const Hero = () => {
   return (
-    <section className="row justify-start bg-center bg-cover" style={{ backgroundImage: `url(${heroBackgroundImage.src})` }}>
-      <div className="column">
+    <section
+      className="row justify-start hero"
+      style={{
+        background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${heroBackgroundImage.src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
+      <div className="column container">
         <h1 className='white'>
           La pastille SNAP,
           <br />
@@ -28,6 +35,9 @@ export const Hero = () => {
             </Button>
           </div>
         </div>
+      </div>
+      <div className="pastille">
+        <Image alt="La pastille" src={PastilleImage} />
       </div>
     </section>
   )
