@@ -1,10 +1,13 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import PastilleImage from "@images/pastille.png"
 import Input from '@codegouvfr/react-dsfr/Input'
 import Button from '@codegouvfr/react-dsfr/Button'
 import heroBackgroundImage from '@images/toulouse.png'
 
 export const Hero = () => {
+  const router = useRouter();
+
   return (
     <section
       className="row justify-start hero"
@@ -30,7 +33,7 @@ export const Hero = () => {
             // stateRelatedMessage="Text de validation / d'explication de l'erreur"
           />
           <div>
-            <Button>
+            <Button onClick={() => router.push("https://rizomo-connect.numerique.gouv.fr/realms/rizomo/login-actions/authenticate?client_id=sso")}>
               Créer mon compte
             </Button>
           </div>

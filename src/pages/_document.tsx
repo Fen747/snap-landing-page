@@ -10,9 +10,6 @@ const {
 export default function Document(props: DocumentProps) {
   const htmlAttributes = getColorSchemeHtmlAttributes(props)
 
-  console.log("htmlAttributes", htmlAttributes);
-
-
   return (
     <Html {...htmlAttributes}>
       <Head />
@@ -20,6 +17,7 @@ export default function Document(props: DocumentProps) {
         <Main />
         <NextScript />
       </body>
+      <script src="https://rizomo.numerique.gouv.fr/scripts/widget" defer></script>
     </Html>
   );
 }

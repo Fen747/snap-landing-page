@@ -1,11 +1,7 @@
 import Image from 'next/image'
-import { Card } from "@codegouvfr/react-dsfr/Card"
-import ToolsImg from "@images/outils.png"
 import mission1Image from '@images/mission_1.png'
 import mission2Image from '@images/mission_2.png'
 import mission3Image from '@images/mission_3.png'
-
-const text = "Suite logicielle d'outils interministériels : collaborer, communiquer, dématérialiser"
 
 export const Mission = () => {
   return (
