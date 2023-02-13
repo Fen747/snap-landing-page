@@ -1,16 +1,16 @@
 import Image from 'next/image'
 import { Card } from "@codegouvfr/react-dsfr/Card"
 import ToolsImg from "@images/outils.png"
-import Undraw1Image from '@images/mission_card_1.svg'
-import Undraw2Image from '@images/mission_card_2.svg'
-import Undraw3Image from '@images/mission_card_3.svg'
+import mission1Image from '@images/mission_1.png'
+import mission2Image from '@images/mission_2.png'
+import mission3Image from '@images/mission_3.png'
 
 const text = "Suite logicielle d'outils interministériels : collaborer, communiquer, dématérialiser"
 
 export const Mission = () => {
   return (
     <section className='white bg-blue mission'>
-      <div className="container">
+      <div className="fr-container">
         <h3 className='white text-center'>
           La mission
         </h3>
@@ -20,7 +20,7 @@ export const Mission = () => {
         <div className="row m-column full-width justify">
           <div className="mission-card m-row">
             <div className="mission-card-img">
-              <Image src={Undraw1Image} alt="Plateforme d'application de l'état"/>
+              <Image src={mission1Image} alt="Plateforme d'application de l'état"/>
             </div>
             <div className="column">
               <h3>La plateforme d&apos;application de l&apos;état</h3>
@@ -29,7 +29,7 @@ export const Mission = () => {
           </div>
           <div className="mission-card m-row">
             <div className="mission-card-img">
-              <Image src={Undraw2Image} alt="Gestionnaire de liens web"/>
+              <Image src={mission2Image} alt="Gestionnaire de liens web"/>
             </div>
             <div className="column">
               <h3>Un gestionnaire de liens web</h3>
@@ -38,7 +38,7 @@ export const Mission = () => {
           </div>
           <div className="mission-card m-row">
             <div className="mission-card-img">
-              <Image src={Undraw3Image} alt="Pastille qui vous accompagne"/>
+              <Image src={mission3Image} alt="Pastille qui vous accompagne"/>
             </div>
             <div className="column">
               <h3>Une pastille qui vous accompagne</h3>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import PastilleImage from "@images/pastille.png"
 import Input from '@codegouvfr/react-dsfr/Input'
 import Button from '@codegouvfr/react-dsfr/Button'
-import heroBackgroundImage from '@images/louvre.jpg'
+import heroBackgroundImage from '@images/toulouse.png'
 
 export const Hero = () => {
   return (
@@ -14,7 +14,7 @@ export const Hero = () => {
         backgroundPosition: 'center'
       }}
     >
-      <div className="column container">
+      <div className="column fr-container">
         <h1 className='white'>
           La pastille SNAP,
           <br />

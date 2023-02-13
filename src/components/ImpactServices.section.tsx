@@ -5,7 +5,7 @@ const text = "Suite logicielle d'outils interministériels : collaborer, communi
 
 export const ImpactServices = () => {
   return (
-    <section id="impact-services" className='container'>
+    <section id="impact-services" className='fr-container'>
       <h3>
         Des services à impact
       </h3>
