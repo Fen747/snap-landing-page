@@ -27,12 +27,7 @@
  ----- HTML -----
 */
 main {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem; */
-  min-height: 100vh;
+  min-height: calc(100vh - 480px);
 }
 
 section {
@@ -100,6 +95,10 @@ section {
   margin-right: 1rem;
 }
 
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
 .mb-3 {
   margin-bottom: 3rem;
 }
@@ -138,18 +137,16 @@ section {
 
 .testimonial-text {
   font-weight: bold;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
   margin-bottom: 1rem;
 }
 
 /* a mobile version of the .testimonial-text class that unset font size and height */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .testimonial-text {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
-}
+} */
 
 .mission-catchphrase {
   font-weight: bold;
@@ -220,25 +217,6 @@ section {
 #impact-services img {
   width: 100%;
   height: auto;
-}
-
-.pastille {
-  position: absolute;
-  bottom: 0px;
-  right: 2rem;
-  transform: translateY(50%);
-}
-
-@media screen and (max-width: 768px) {
-  .pastille {
-    right: 0rem;
-  }
-
-  .pastille img {
-    width: 100%;
-    object-fit: cover;
-    height: 150px;
-  }
 }
 
 section.hero {

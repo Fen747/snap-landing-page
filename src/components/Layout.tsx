@@ -18,7 +18,7 @@ export const Layout: FC<{ children: ReactNode }> = (props) => {
           {
             iconId: 'fr-icon-arrow-right-line',
             linkProps: {
-              href: ''
+              href: '/share'
             },
             text: 'Partager'
           },

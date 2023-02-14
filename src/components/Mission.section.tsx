@@ -19,8 +19,8 @@ export const Mission = () => {
               <Image src={mission1Image} alt="Plateforme d'application de l'état"/>
             </div>
             <div className="column">
-              <h3>La plateforme d&apos;application de l&apos;état</h3>
-              <p>Avec la pastille, les agents publics peuvent facilement intréger des applications à leur espace personnalisables.</p>
+              <h3>La plateforme d&apos;applications de l&apos;État</h3>
+              <p>Avec la pastille, les agents publics peuvent facilement intégrer des applications à leurs espaces personnalisables.</p>
             </div>
           </div>
           <div className="mission-card m-row">
