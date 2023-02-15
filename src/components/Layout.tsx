@@ -1,6 +1,10 @@
 import type { FC, ReactNode } from 'react'
 import { Header } from "@codegouvfr/react-dsfr/Header"
 import { Footer } from "@codegouvfr/react-dsfr/Footer"
+import pastilleCouleurImage from '@images/pastille_couleur.png'
+import Head from "next/head";
+import { useRouter } from 'next/router';
+
 
 const brandTop = <>MINISTÈRE<br />DE LA TRANSFORMATION<br/>ET DE LA FONCTION<br />PUBLIQUES</>
 const homeLinkProps = {
@@ -9,8 +13,15 @@ const homeLinkProps = {
 }
 
 export const Layout: FC<{ children: ReactNode }> = (props) => {
+  const router = useRouter();
+
+
+
   return (
     <>
+      <Head>
+        <meta property="og:image" content={pastilleCouleurImage.src} />
+      </Head>
       <Header
         brandTop={brandTop}
         homeLinkProps={homeLinkProps}
@@ -18,9 +29,9 @@ export const Layout: FC<{ children: ReactNode }> = (props) => {
           {
             iconId: 'fr-icon-arrow-right-line',
             linkProps: {
-              href: '/share'
+              href: router.pathname === '/share' ? '/' : '/share',
             },
-            text: 'Partager'
+            text: router.pathname === '/share' ? 'Accueil' : 'Partager',
           },
         ]}
       />
@@ -31,14 +42,15 @@ export const Layout: FC<{ children: ReactNode }> = (props) => {
         accessibility="fully compliant"
         brandTop={brandTop}
         homeLinkProps={homeLinkProps}
-        cookiesManagementLinkProps={{
-          href: '#'
-        }}
-        personalDataLinkProps={{
-          href: '#'
-        }}
+        // cookiesManagementLinkProps={{
+        //   href: '#'
+        // }}
+        // personalDataLinkProps={{
+        //   href: '#'
+        // }}
         termsLinkProps={{
-          href: '/terms'
+          href: 'https://rizomo.numerique.gouv.fr/legal/legalnotice',
+          target: '_blank'
         }}
         websiteMapLinkProps={{
           href: '/sitemap.xml'

@@ -31,8 +31,11 @@ export const Hero = () => {
             // stateRelatedMessage="Text de validation / d'explication de l'erreur"
           /> */}
           <div>
-            <Button onClick={() => router.push("https://rizomo-connect.numerique.gouv.fr/realms/rizomo/protocol/openid-connect/registrations?client_id=sso&redirect_uri=https://rizomo.numerique.gouv.fr/_oauth/keycloak&scope=openid&response_type=code")}>
+            <Button className="mr-1" onClick={() => router.push("https://rizomo-connect.numerique.gouv.fr/realms/rizomo/protocol/openid-connect/registrations?client_id=sso&redirect_uri=https://rizomo.numerique.gouv.fr/_oauth/keycloak&scope=openid&response_type=code")}>
               Créer mon compte
+            </Button>
+            <Button onClick={() => router.push("https://rizomo-connect.numerique.gouv.fr/realms/rizomo/protocol/openid-connect/auth?client_id=sso&redirect_uri=https://rizomo.numerique.gouv.fr/_oauth/keycloak&scope=openid&response_type=code&kc_idp_hint=agentconnect")}>
+              Créer mon compte via AgentConnect
             </Button>
           </div>
         </div>
