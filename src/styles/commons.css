@@ -220,7 +220,7 @@ section {
 }
 
 section.hero {
-  min-height: 500px;
+  min-height: 90vh;
   position: relative;
 }
 
