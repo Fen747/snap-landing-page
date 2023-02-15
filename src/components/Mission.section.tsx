@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import mission1Image from '@images/mission_1.svg'
-import mission2Image from '@images/mission_2.svg'
-import mission3Image from '@images/mission_3.svg'
+import mission1Image from '@images/mission_card_1.svg'
+import mission2Image from '@images/mission_card_2.svg'
+import mission3Image from '@images/mission_card_3.svg'
 
 export const Mission = () => {
   return (

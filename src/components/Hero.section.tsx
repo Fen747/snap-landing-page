@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 // import Input from '@codegouvfr/react-dsfr/Input'
 import Button from '@codegouvfr/react-dsfr/Button'
-import heroBackgroundImage from '@images/toulouse.png'
+import heroBackgroundImage from '@images/louvre.jpg'
 
 export const Hero = () => {
   const router = useRouter();
@@ -10,7 +10,7 @@ export const Hero = () => {
     <section
       className="row justify-start hero"
       style={{
-        background: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.15)), url(${heroBackgroundImage.src})`,
+        background: `linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)), url(${heroBackgroundImage.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
