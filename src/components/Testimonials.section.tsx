@@ -28,7 +28,7 @@ export const Testimonials = () => {
               <Image alt="Marc" src={MarcAvatar} width="50" height="50"/>
             </div>
             <div>
-              Marc Lelièvre (INRAE)
+              Marc L. (INRAE)
             </div>
           </div>
         </div>
