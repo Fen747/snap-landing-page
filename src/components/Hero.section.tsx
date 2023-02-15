@@ -31,7 +31,7 @@ export const Hero = () => {
             // stateRelatedMessage="Text de validation / d'explication de l'erreur"
           /> */}
           <div>
-            <Button onClick={() => router.push("https://rizomo-connect.numerique.gouv.fr/realms/rizomo/login-actions/authenticate?client_id=sso")}>
+            <Button onClick={() => router.push("https://rizomo-connect.numerique.gouv.fr/realms/rizomo/protocol/openid-connect/registrations?client_id=sso&redirect_uri=https://rizomo.numerique.gouv.fr/_oauth/keycloak&scope=openid&response_type=code")}>
               Créer mon compte
             </Button>
           </div>
