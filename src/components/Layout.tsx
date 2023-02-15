@@ -15,8 +15,6 @@ const homeLinkProps = {
 export const Layout: FC<{ children: ReactNode }> = (props) => {
   const router = useRouter();
 
-
-
   return (
     <>
       <Head>
