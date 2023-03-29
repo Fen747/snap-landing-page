@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 // import Input from '@codegouvfr/react-dsfr/Input'
 import Button from "@codegouvfr/react-dsfr/Button";
 // import heroBackgroundImage from '@images/louvre.jpg'
-import heroBackgroundImage from "@images/toulouse.jpg";
+import heroBackgroundImage from "@images/toulouse.png";
 
 export const Hero = () => {
   const router = useRouter();
