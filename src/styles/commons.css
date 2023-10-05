@@ -103,6 +103,10 @@ section {
   margin-bottom: 3rem;
 }
 
+.mt-3 {
+  margin-top: 3rem;
+}
+
 /*
  ----- Text -----
 */
@@ -112,6 +116,10 @@ section {
 
 .bold {
   font-weight: bold;
+}
+
+.fontNormal {
+  font-weight: 400;
 }
 
 /*

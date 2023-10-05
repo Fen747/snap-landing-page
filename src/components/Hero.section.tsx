@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Button from "@codegouvfr/react-dsfr/Button";
 // import heroBackgroundImage from '@images/louvre.jpg'
 import heroBackgroundImage from "@images/dinum-min.jpg";
+import FranceConnectButton from "./FranceConnectButton";
 
 export const Hero = () => {
   const router = useRouter();
@@ -22,35 +23,21 @@ export const Hero = () => {
           <br />
           <q>Mes applications à portée de main !</q>
         </h1>
+        <h4 className="white fontNormal">La pastille SNAP vous attend en bas a droite...</h4>
         <div className="row align-center">
           {/* <Input
             className='mr-1 white'
             label="Courriel"
-
+            
             // hintText="Texte de description"
             // state="default"
             // stateRelatedMessage="Text de validation / d'explication de l'erreur"
           /> */}
-          <div>
-            <Button
-              className="mr-1"
-              onClick={() =>
-                router.push(
-                  "https://snap-auth.numerique.gouv.fr/auth/realms/rizomo/protocol/openid-connect/registrations?client_id=sso&redirect_uri=https://rizomo.numerique.gouv.fr/_oauth/keycloak&scope=openid&response_type=code"
-                )
-              }
-            >
-              Créer mon compte
-            </Button>
-            <Button
-              onClick={() =>
-                router.push(
-                  "https://snap-auth.numerique.gouv.fr/auth/realms/rizomo/protocol/openid-connect/auth?client_id=sso&redirect_uri=https://rizomo.numerique.gouv.fr/_oauth/keycloak&scope=openid&response_type=code&kc_idp_hint=agentconnect"
-                )
-              }
-            >
-              Créer mon compte via AgentConnect
-            </Button>
+          <div className="mt-3">
+          <FranceConnectButton />
+            <a href="https://snap-auth.numerique.gouv.fr/auth/realms/rizomo/login-actions/authenticate?execution=a7cf741d-1660-4ebc-97de-24ce3e672253&client_id=sso&tab_id=IC-kdFXAM00">
+              <p className="white">S'identifier avec son courriel</p>
+            </a>          
           </div>
         </div>
       </div>
