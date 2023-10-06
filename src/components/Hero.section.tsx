@@ -7,6 +7,7 @@ import FranceConnectButton from "./FranceConnectButton";
 
 export const Hero = () => {
 
+  const emailReceiver = process.env.NEXT_PUBLIC_EMAIL_RECEIVER;
   return (
     <section
       className="row justify-start hero"
@@ -18,7 +19,7 @@ export const Hero = () => {
       >
         <div className="column full-width ninetyVH ">
           <div className="row justify-end">
-            <button className="fr-btn">La pastille pour ma structure</button>
+            <a href={`mailto:${emailReceiver}`}><button className="fr-btn">La pastille pour ma structure</button></a>
           </div>
           <div className="column fr-container justify full-height">
           <h1 className="white">
