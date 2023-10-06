@@ -119,6 +119,13 @@ section {
   margin-top: 3rem;
 }
 
+.m-1 {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
 /*
  ----- Text -----
 */
@@ -148,6 +155,10 @@ section {
 /*
  ----- Other -----
 */
+.shadow {
+  box-shadow: 0 2px 6px rgba(0, 0, 18, 0.16);
+}
+
 .avatar img {
   border-radius: 50%;
   width: 50px;
@@ -246,6 +257,11 @@ section.hero {
 
 section.mission {
   padding-top: 5rem;
+}
+
+.write-us {
+  border-left: 0.25rem solid var(--light-blue);
+  padding-bottom: 1rem;
 }
 
 /*

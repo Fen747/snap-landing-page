@@ -6,7 +6,6 @@ import heroBackgroundImage from "@images/dinum-min.jpg";
 import FranceConnectButton from "./FranceConnectButton";
 
 export const Hero = () => {
-  const router = useRouter();
 
   return (
     <section
