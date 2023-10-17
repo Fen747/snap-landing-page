@@ -11,10 +11,10 @@ export default function WriteUs() {
             <div className="fr-container shadow write-us">
                 <div className="row m-column">
                     <div className="row justify">
-                        <img src={flechette.src} alt="" />
+                        <img src={flechette.src} alt="une flechette en plein centre de la cible" />
                     </div>
                     <div className="column justify">
-                        <h5>Voulez-vous permettre à tous vos agents d'utiliser La Pastille ?</h5>
+                        <h5>Voulez-vous permettre à tous vos agents d&#39;utiliser La Pastille ?</h5>
                         <p>Facilitez la diffusion de La Pastille auprès de vos équipes</p>
                         <div>
                             <a href={`mailto:${emailReceiver}`}><button className="fr-btn">Nous écrire</button></a>

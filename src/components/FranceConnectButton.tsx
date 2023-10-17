@@ -8,11 +8,11 @@ export default function FranceConnectButton() {
                 router.push(
                   "https://auth.agentconnect.gouv.fr/api/v2/interaction/1IByJ6L3_wWtwVeebHI1S"
                 )}>        
-        <span className="fr-connect__login">S’identifier avec</span>        
+        <span className="fr-connect__login">S&rsquo;identifier avec</span>        
         <span className="fr-connect__brand">FranceConnect</span>    
     </button>    
     <p>        
-        <a href="https://franceconnect.gouv.fr/" target="_blank"  rel="noopener" title="Qu’est-ce que FranceConnect ? - nouvelle fenêtre">Qu’est-ce que FranceConnect ?</a>    
+        <a href="https://franceconnect.gouv.fr/" target="_blank"  rel="noreferrer" title="Qu’est-ce que FranceConnect ? - nouvelle fenêtre">Qu&rsquo;est-ce que FranceConnect ?</a>    
     </p>
 </div>
     )

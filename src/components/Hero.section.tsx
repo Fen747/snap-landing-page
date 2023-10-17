@@ -40,7 +40,7 @@ export const Hero = () => {
             <div className="mt-3">
             <FranceConnectButton />
               <a href="https://snap-auth.numerique.gouv.fr/auth/realms/rizomo/login-actions/authenticate?execution=a7cf741d-1660-4ebc-97de-24ce3e672253&client_id=sso&tab_id=IC-kdFXAM00">
-                <p className="white">S'identifier avec son courriel</p>
+                <p className="white">S&rsquo;identifier avec son courriel</p>
               </a>
             </div>
           </div>
