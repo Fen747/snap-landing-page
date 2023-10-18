@@ -274,3 +274,8 @@ section.mission {
 #whiteColor {
   color: white;
 }
+
+#emailLogin {
+  margin-top: 12.5rem;
+  text-decoration: underline;
+}
