@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ToolsImg from "@images/outilsHD.png"
+import ToolsImg from "@images/Les outils hd.png"
 
 const text = "Suite logicielle d'outils interministériels : collaborer, communiquer, dématérialiser"
 
