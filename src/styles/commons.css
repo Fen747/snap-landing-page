@@ -270,3 +270,7 @@ section.mission {
 .white > label.fr-label {
   color: white;
 }
+
+#whiteColor {
+  color: white;
+}
