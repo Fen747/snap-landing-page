@@ -4,6 +4,7 @@ import { Hero } from '@/components/Hero.section'
 import { Mission } from '@/components/Mission.section'
 import { ImpactServices } from '@/components/ImpactServices.section'
 import { Testimonials } from '@/components/Testimonials.section'
+import WriteUs from '@/components/WriteUs.section'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Mission />
       <ImpactServices />
       <Testimonials />
+      <WriteUs />
     </>
   )
 }
