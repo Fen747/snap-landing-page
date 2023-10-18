@@ -19,11 +19,11 @@ export const Hero = () => {
       >
         <div className="column full-width ninetyVH ">
           <div className="row justify-end">
-            <a href={`mailto:${emailReceiver}`}><button className="fr-btn">La pastille pour ma structure</button></a>
+            <a href={`mailto:${emailReceiver}`}><button className="fr-btn">La Pastille pour ma structure</button></a>
           </div>
           <div className="column fr-container justify full-height">
           <h1 className="white">
-            La pastille SNAP,
+            La Pastille SNAP,
             <br />
             <q>Mes applications à portée de main !</q>
           </h1>
