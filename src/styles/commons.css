@@ -119,6 +119,10 @@ section {
   margin-top: 3rem;
 }
 
+.mt-200 {
+  margin-top: 12.5rem;
+}
+
 .m-1 {
   margin-top: 1rem;
   margin-right: 1rem;
@@ -271,11 +275,6 @@ section.mission {
   color: white;
 }
 
-#whiteColor {
-  color: white;
-}
-
-#emailLogin {
-  margin-top: 12.5rem;
-  text-decoration: underline;
+.fr-connect-group a {
+  color: white !important;
 }

@@ -12,7 +12,7 @@ export default function FranceConnectButton() {
         <span className="fr-connect__brand">FranceConnect</span>    
     </button>    
     <p>        
-        <a href="https://franceconnect.gouv.fr/" target="_blank"  rel="noreferrer" title="Qu’est-ce que FranceConnect ? - nouvelle fenêtre" id="whiteColor">
+        <a href="https://franceconnect.gouv.fr/" target="_blank"  rel="noreferrer" title="Qu’est-ce que FranceConnect ? - nouvelle fenêtre">
             Qu&rsquo;est-ce que FranceConnect
         </a>    
     </p>
