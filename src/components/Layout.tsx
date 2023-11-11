@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 const brandTop = <>MINISTÈRE<br />DE LA TRANSFORMATION<br/>ET DE LA FONCTION<br />PUBLIQUES</>
 const homeLinkProps = {
   href: '/',
-  title: 'Accueil - SNAP'
+  title: 'Accueil - La Suite Numérique'
 }
 
 export const Layout: FC<{ children: ReactNode }> = (props) => {

@@ -11,7 +11,7 @@ const Feedback = () => {
   return  (
     <section className="fr-container">
       <h1 className="mb-3">
-        Que pensez-vous de la Pastille SNAP ?
+        Que pensez-vous de la Suite Numérique ?
       </h1>
       <iframe data-tally-src={`https://tally.so/embed/w2X8rg?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&email=${router.query.email}`} loading="lazy" width="100%" height="368" frameBorder="0" marginHeight={0} marginWidth={0} title="Feedback form"></iframe>
       <div dangerouslySetInnerHTML={{ __html: `<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>` }}></div>
@@ -34,9 +34,9 @@ const Feedback = () => {
         </>
       ) : (
         <>
-          <h1>Dites nous ce que vous pensez de la pastille SNAP</h1>
+          <h1>Dites nous ce que vous pensez de la Suite Numérique</h1>
           <p>
-            L&apos;objectif de ce questionnaire mis en place par la DINUM est de recueillir le retour d&apos;expérience des utilisateurs lors de votre utilisation de La Pastille SNAP
+            L&apos;objectif de ce questionnaire mis en place par la DINUM est de recueillir le retour d&apos;expérience des utilisateurs lors de votre utilisation de la Suite Numérique
           </p>
           <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="4b59719a-9952-4ff8-83dd-bf22cf500532" />

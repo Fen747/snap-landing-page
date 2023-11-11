@@ -9,8 +9,8 @@ import { useEffect, useState } from 'react'
 const Share = () => {
   const rootUrl = (typeof window === "undefined") ? "" : window.location.toString().split(window.location.pathname)[0];
   const linkedInLink = `https://www.linkedin.com/sharing/share-offsite/?url=${rootUrl}`;
-  const twitterLink = `https://twitter.com/intent/tweet?url=${rootUrl}&text=La Pastille SNAP`;
-  const mailLink = `mailto:?subject=La Pastille Snap&body=${rootUrl}`;
+  const twitterLink = `https://twitter.com/intent/tweet?url=${rootUrl}&text=la Suite Numérique`;
+  const mailLink = `mailto:?subject=la Suite Numérique&body=${rootUrl}`;
 
   const [show, setShow] = useState(false);
 
@@ -21,7 +21,7 @@ const Share = () => {
   return  (
     <section className="fr-container">
       <h1 className='mb-3'>
-        Partager la Pastille SNAP
+        Partager la Suite Numérique
       </h1>
       {show && (
         <div className="row space-around full-width">

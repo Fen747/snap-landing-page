@@ -23,16 +23,16 @@ export const Hero = () => {
           </div>
           <div className="column fr-container justify full-height">
           <h1 className="white">
-            La Pastille SNAP,
+            La Suite Numérique,
             <br />
             <q>Mes applications à portée de main !</q>
           </h1>
-          <h4 className="white fontNormal">La pastille SNAP vous attend en bas a droite...</h4>
+          <h4 className="white fontNormal">La Suite Numérique vous attend en bas a droite...</h4>
           <div className="row align-center">
             {/* <Input
               className='mr-1 white'
               label="Courriel"
-          
+
               // hintText="Texte de description"
               // state="default"
               // stateRelatedMessage="Text de validation / d'explication de l'erreur"
