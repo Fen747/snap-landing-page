@@ -270,3 +270,12 @@ section.mission {
 .white > label.fr-label {
   color: white;
 }
+
+#whiteColor {
+  color: white;
+}
+
+#emailLogin {
+  margin-top: 12.5rem;
+  text-decoration: underline;
+}
