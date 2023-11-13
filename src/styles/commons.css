@@ -279,3 +279,11 @@ section.mission {
   margin-top: 12.5rem;
   text-decoration: underline;
 }
+
+.agent-connect {
+  background-color: #0063cb;
+}
+
+.agent-connect:hover, .agent-connect:active {
+  background-color: #2f94fb;
+}

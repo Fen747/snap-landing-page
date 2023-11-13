@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Button from "@codegouvfr/react-dsfr/Button";
 // import heroBackgroundImage from '@images/louvre.jpg'
 import heroBackgroundImage from "@images/dinum-min.jpg";
-import FranceConnectButton from "./FranceConnectButton";
+import AgentConnectButton from "./AgentConnectButton";
 
 export const Hero = () => {
 
@@ -17,9 +17,13 @@ export const Hero = () => {
         backgroundPosition: "center",
       }}
       >
-        <div className="column full-width ninetyVH ">
+        <div className="column fr-container full-width ninetyVH ">
           <div className="row justify-end">
-            <a href={`mailto:${emailReceiver}`}><button className="fr-btn">La Pastille pour ma structure</button></a>
+            <a href={`mailto:${emailReceiver}`} style={{border: "1px solid white"}}>
+              <button className="fr-btn">
+                Obtenir la Suite Numérique pour ma structure
+              </button>
+            </a>
           </div>
           <div className="column fr-container justify full-height">
           <h1 className="white">
@@ -38,7 +42,7 @@ export const Hero = () => {
               // stateRelatedMessage="Text de validation / d'explication de l'erreur"
             /> */}
             <div className="mt-3">
-            <FranceConnectButton />
+            <AgentConnectButton />
               <a href="https://snap-auth.numerique.gouv.fr/auth/realms/rizomo/login-actions/authenticate?execution=a7cf741d-1660-4ebc-97de-24ce3e672253&client_id=sso&tab_id=IC-kdFXAM00">
                 <p id="emailLogin" className="white">S&rsquo;identifier avec son courriel</p>
               </a>
